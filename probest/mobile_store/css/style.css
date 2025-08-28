@@ -1,0 +1,224 @@
+/* --- Google Font --- */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap');
+
+/* --- CSS Variables (ตัวแปรสี) --- */
+:root {
+    --mango-yellow: #FFC300; /* สีเหลืองมะม่วง */
+    --dark-yellow: #d4a300;
+    --dark-text: #34495E;
+    --secondary-text: #7f8c8d;
+    --bg-color: #F4F6F9;
+    --sidebar-bg: #FFFFFF;
+    --white: #FFFFFF;
+    --danger: #e74c3c;
+    --increase: #2ecc71;
+    --decrease: #e74c3c;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--dark-text);
+}
+
+.container {
+    display: flex;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+    width: 260px;
+    background-color: var(--sidebar-bg);
+    min-height: 100vh;
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo-icon {
+    font-size: 32px;
+    color: var(--mango-yellow);
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-text);
+}
+
+.sidebar-menu li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--secondary-text);
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu li.active a {
+    background-color: var(--mango-yellow);
+    color: var(--white);
+}
+
+.sidebar-menu a i {
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+.sidebar-menu a span {
+    font-weight: 500;
+}
+
+
+/* --- Main Content --- */
+.main-content {
+    flex-grow: 1;
+    padding: 20px 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.user-info i {
+    font-size: 28px;
+    margin-left: 10px;
+    color: var(--secondary-text);
+}
+
+.logout-btn {
+    background-color: var(--danger);
+    color: var(--white);
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+/* --- Dashboard Overview --- */
+.dashboard-overview h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.dashboard-overview p {
+    color: var(--secondary-text);
+    margin-bottom: 30px;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.stat-card {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 28px;
+}
+
+.card-icon.revenue { background-color: #e8f5e9; color: var(--increase); }
+.card-icon.orders { background-color: #fff3e0; color: #ff9800; }
+.card-icon.low-stock { background-color: #ffebee; color: var(--decrease); }
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: var(--secondary-text);
+}
+
+.stat-comparison {
+    font-size: 14px;
+    margin-top: 5px;
+}
+.stat-comparison.increase { color: var(--increase); }
+.stat-comparison.decrease { color: var(--decrease); }
+
+/* --- Chart Card --- */
+.chart-card {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    margin-top: 40px;
+}
+
+.chart-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.chart-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 300px;
+    color: #bdc3c7;
+}
+.chart-placeholder i {
+    font-size: 100px;
+}

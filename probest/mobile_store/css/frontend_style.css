@@ -1,0 +1,350 @@
+/* --- Google Font --- */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.frontend-header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+.store-logo a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #34495E;
+}
+.store-logo .logo-icon { color: #FFC300; }
+
+.cart-icon a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #34495E;
+    position: relative;
+}
+.cart-icon .bx { font-size: 2rem; vertical-align: middle; }
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* --- Hero Section (ส่วนที่เพิ่มใหม่) --- */
+.hero-section {
+    position: relative;
+    height: 60vh;
+    background-image: url('https://images.unsplash.com/photo-1598327105666-6d8253791a27?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-section::after { /* สร้าง Overlay สีเข้มทับรูปเพื่อให้เห็นตัวหนังสือชัด */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+
+/* --- Product Card Enhancements (ปรับปรุงการ์ดสินค้า) --- */
+.product-section {
+    padding: 4rem 0;
+}
+.product-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+.product-image {
+    background-color: #e9ecef;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #adb5bd;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.product-card .btn-warning {
+    background-color: #FFC300;
+    border-color: #FFC300;
+    color: #34495E;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+.product-card .btn-warning:hover {
+    background-color: #e0ac00;
+    transform: scale(1.05);
+}
+/* --- Product Detail Page --- */
+.product-detail-image img {/* --- Google Font --- */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;700&display=swap');
+
+/* --- General Dark Theme --- */
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: #000000;
+    color: #f5f5f7;
+}
+
+/* --- Top Announcement Bar --- */
+.top-bar {
+    background-color: #0071e3;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 0.9rem;
+}
+
+/* --- Header --- */
+.frontend-header {
+    background-color: rgba(29, 29, 31, 0.9);
+    padding: 0.8rem 2rem;
+    box-shadow: none;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    backdrop-filter: blur(10px);
+}
+.store-logo a, .cart-icon a, .user-actions a, .user-actions span {
+    color: #f5f5f7;
+}
+.user-actions .btn-primary {
+    background-color: #0071e3;
+    border: none;
+    color: white;
+}
+.user-actions .btn-outline-secondary {
+    border-color: #555;
+    color: #f5f5f7;
+}
+.user-actions .btn-outline-secondary:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* --- Hero Section (Apple Style) --- */
+.hero-section {
+    position: relative;
+    height: 80vh;
+    background-image: url('https://images.unsplash.com/photo-1574340995344-738a455a935b?q=80&w=1974&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #a1a1a6;
+}
+.hero-content .btn {
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    border: none;
+    border-radius: 980px;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+.hero-content .btn:hover {
+    background-color: #fff;
+}
+
+
+/* --- Product Section --- */
+.product-section {
+    padding: 5rem 0;
+    background-color: #000;
+}
+.product-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #f5f5f7;
+}
+
+/* --- Product Card (Dark) --- */
+.product-card {
+    background-color: #1d1d1f;
+    border: 1px solid #333;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.product-card:hover {
+    transform: translateY(-10px);
+    border-color: #555;
+}
+.product-image {
+    background-color: #000;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+}
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-card .card-body {
+    background-color: #1d1d1f;
+}
+.product-card .card-title, .product-card .card-subtitle {
+    color: #f5f5f7;
+}
+.product-card .card-text {
+    color: #a1a1a6;
+}
+.product-card .btn-outline-warning {
+    border-color: #0071e3;
+    color: #0071e3;
+    border-radius: 980px;
+    width: 100%;
+}
+.product-card .btn-outline-warning:hover {
+    background-color: #0071e3;
+    color: white;
+}
+
+/* --- Footer --- */
+footer.bg-light {
+    background-color: #1d1d1f !important;
+    color: #a1a1a6;
+    border-top: 1px solid #333;
+}
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.product-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.product-brand {
+    font-size: 1.2rem;
+}
+.product-price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #FFC300; /* สีเหลืองมะม่วง */
+}
+.placeholder-image {
+    width: 100%;
+    height: 400px;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #adb5bd;
+    border-radius: 15px;
+}
+/* --- Google Font --- */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;700&display=swap');
+/* ... (โค้ดส่วน General Theme, Top Bar, Header เหมือนเดิม) ... */
+body{font-family:'Sarabun',sans-serif;background-color:#000;color:#f5f5f7}.top-bar{background-color:#0071e3;color:#fff;text-align:center;padding:8px 0;font-size:.9rem}.frontend-header{background-color:rgba(29,29,31,.9);padding:.8rem 2rem;box-shadow:none;border-bottom:1px solid #333;position:sticky;top:0;z-index:1020;backdrop-filter:blur(10px)}.store-logo a,.cart-icon a,.user-actions a,.user-actions span{color:#f5f5f7}.user-actions .btn-primary{background-color:#0071e3;border:none;color:#fff}.user-actions .btn-outline-secondary{border-color:#555;color:#f5f5f7}.user-actions .btn-outline-secondary:hover{background-color:#555;color:#fff}
+
+/* --- Hero Section (Apple Style) --- */
+.hero-section {
+    position: relative; /* สำคัญ: เพื่อให้ video จัดตำแหน่งอ้างอิงกับส่วนนี้ */
+    height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    overflow: hidden; /* ป้องกันไม่ให้ video ล้นออกมา */
+}
+.hero-section::after { 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay ยังคงอยู่เพื่อทำให้ข้อความอ่านง่าย */
+    z-index: 1; /* Overlay อยู่เหนือวิดีโอ */
+}
+.hero-content {
+    position: relative;
+    z-index: 2; /* ข้อความต้องอยู่บนสุด */
+}
+/* ... (โค้ด .hero-content h1, p, .btn เหมือนเดิม) ... */
+.hero-content h1{font-size:4rem;font-weight:700;letter-spacing:-1px}.hero-content p{font-size:1.5rem;margin-bottom:2rem;color:#a1a1a6}.hero-content .btn{background-color:#f5f5f7;color:#1d1d1f;border:none;border-radius:980px;padding:10px 25px;font-weight:500;transition:background-color .3s ease}.hero-content .btn:hover{background-color:#fff}
+
+/* --- Video Background (เพิ่มใหม่) --- */
+.hero-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* วิดีโออยู่หลังสุด */
+}
+
+/* ... (โค้ด Product Section และส่วนอื่นๆ เหมือนเดิมทั้งหมด) ... */
+.product-section{padding:5rem 0;background-color:#000}.product-section h2{font-size:2.5rem;font-weight:600;color:#f5f5f7}.product-card{background-color:#1d1d1f;border:1px solid #333;border-radius:18px;transition:all .3s ease;overflow:hidden}.product-card:hover{transform:translateY(-10px);border-color:#555}.product-image{background-color:#000;height:250px;display:flex;align-items:center;justify-content:center;color:#555}.product-image img{width:100%;height:100%;object-fit:cover}.product-card .card-body{background-color:#1d1d1f}.product-card .card-title,.product-card .card-subtitle{color:#f5f5f7}.product-card .card-text{color:#a1a1a6}.product-card .btn-outline-warning{border-color:#0071e3;color:#0071e3;border-radius:980px;width:100%}.product-card .btn-outline-warning:hover{background-color:#0071e3;color:#fff}footer.bg-light{background-color:#1d1d1f!important;color:#a1a1a6;border-top:1px solid #333}
